@@ -60,4 +60,17 @@ console.log(carsInReverse.shift())
 carsInReverse.unshift("Nissan")
 console.log(carsInReverse)
 
-//
+// Create an array called numbers with the following items: 23, 45, 0, 2 
+// Write code that will add 2 to each item in the array numbers.
+let numbers = [23, 45, 0, 2];
+
+numbers.forEach(number => console.log(number + 2));
+
+// Build a function that will add 2 and then use .forEach() to pass each number into your freshly built function.
+const newNumbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34];
+
+function plusTwo(number) {
+  return number + 2;
+};
+
+newNumbers.forEach(number => console.log(plusTwo(number)));
